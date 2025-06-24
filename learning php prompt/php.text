@@ -1,0 +1,7 @@
+learing php 
+
+give meaning to this 3 in php:
+ * Maths - pow,abs,sqrt,
+ * String - splice,split, shuffle, wordwrap,replace,
+ * Array - in php object array are *Associative array*, *Multi-Dimensional*. and hashmp.
+ keyword: array-merge,array-map,array-diff,array-pop,array-reduce
