@@ -1,6 +1,6 @@
-//solving a real world quadratic equation
-
 <?php 
+
+//solving a real world quadratic equation
 
 // Function to solve the quadratic equation ax^2 + bx + c = 0
 
