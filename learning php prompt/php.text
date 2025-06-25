@@ -5,3 +5,7 @@ give meaning to this 3 in php:
  * String - splice,split, shuffle, wordwrap,replace,
  * Array - in php object array are *Associative array*, *Multi-Dimensional*. and hashmp.
  keyword: array-merge,array-map,array-diff,array-pop,array-reduce
+
+ String Templates
+ query Strings
+ $_GET
