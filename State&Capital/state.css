@@ -6,6 +6,10 @@
      margin: 0 auto;
  }
 
+ #body{
+    margin: 0 auto;
+ }
+
  .search-container {
      background-color: white;
      border-radius: 10px;
@@ -20,7 +24,7 @@
      border: 2px solid #ddd;
  }
 
- .filter-btn {
+ #filterDropdown {
      border-radius: 50px;
      background-color: #1a5276;
      color: white;
