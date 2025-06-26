@@ -1,24 +1,27 @@
 <?php
-    require("stateDatabase.php");
+require("stateDatabase.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>36 States and Capital</title>
-    <link rel="stylesheet" href="bootclass/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <style>
-        #formId{
+        #formId {
             outline: none;
             box-shadow: none;
         }
-        #formId:focus{
+
+        #formId:focus {
             border: 2px solid blue;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2 class="fw-bold text-center mt-3">36 States and Capital of Nigeria</h2>
@@ -30,8 +33,8 @@
                 </div>
                 <div>
                     <div class="form-floating mt-4 mb-4">
-                      <input oninput="searchStates(this)" type="search" class="form-control" name="" id="formId" placeholder="">
-                      <label for="formId">Search here...</label>
+                        <input oninput="searchStates(this)" type="search" class="form-control" name="" id="formId" placeholder="">
+                        <label for="formId">Search here...</label>
                     </div>
                 </div>
                 <ul class="list-group" id="states">
@@ -40,6 +43,46 @@
             </div>
         </div>
     </div>
-<script src="state.js"></script>
+    <script>
+        const stateData = <?php echo json_encode($states) ?>;
+        const states = document.getElementById("states");
+        displayStates(stateData);
+
+        function sortStates() {
+            const sortStates = stateData.sort(function(a, b) {
+                return a.state.localeCompare(b.state);
+            });
+            displayStates(sortStates);
+        }
+
+        function displayStates(stateData) {
+            states.innerHTML = "";
+            for (let index = 0; index < stateData.length; index++) {
+                const each = stateData[index];
+                states.innerHTML += `
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">${each.state}</span>
+                            <a href="stateView.php?state=${each.state}">more details</a>
+                    </li>
+                            `
+            }
+        }
+
+        function searchStates(e) {
+            const userInput = e.value.toLowerCase();
+            const values = stateData.filter(function(each) {
+                const list = `${each.state}`;
+                const turning = list.toLowerCase();
+                return turning.includes(userInput);
+            });
+            if (values.length == 0) {
+                states.innerHTML = `<li class="list-group-item text-danger">No results found.</li>`;
+                return;
+            }
+            displayStates(values);
+        }
+    </script>
 </body>
+
 </html>

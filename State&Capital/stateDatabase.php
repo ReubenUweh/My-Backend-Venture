@@ -1,15 +1,6 @@
 <?php
 $states = [
     [
-        "state" => "Abia Umuahia",
-        "governor" => "Alex Otti",
-        "population" => "3.7 million",
-        "mineral_resources" => ["Lead", "Zinc", "Limestone"],
-        "slogan" => "God’s Own State",
-        "geo_zone" => "South East",
-        "year_created" => 1991
-    ],
-    [
         "state" => "Adamawa Yola",
         "governor" => "Ahmadu Fintiri",
         "population" => "4.2 million",
@@ -18,7 +9,6 @@ $states = [
         "geo_zone" => "North East",
         "year_created" => 1991
     ],
-
     [
         "state" => "Akwa Ibom Uyo",
         "governor" => "Umo Eno",
@@ -29,13 +19,13 @@ $states = [
         "year_created" => 1987
     ],
     [
-        "state" => "Anambra Awka",
-        "governor" => "Charles Soludo",
-        "population" => "4.5 million",
-        "mineral_resources" => ["Lignite", "Clay", "Ironstone"],
-        "slogan" => "Light of the Nation",
+        "state" => "Abia Umuahia",
+        "governor" => "Alex Otti",
+        "population" => "3.7 million",
+        "mineral_resources" => ["Lead", "Zinc", "Limestone"],
+        "slogan" => "God’s Own State",
         "geo_zone" => "South East",
-        "year_created" => 1976
+        "year_created" => 1991
     ],
     [
         "state" => "Bauchi Bauchi",
@@ -47,6 +37,15 @@ $states = [
         "year_created" => 1976
     ],
     [
+        "state" => "Anambra Awka",
+        "governor" => "Charles Soludo",
+        "population" => "4.5 million",
+        "mineral_resources" => ["Lignite", "Clay", "Ironstone"],
+        "slogan" => "Light of the Nation",
+        "geo_zone" => "South East",
+        "year_created" => 1976
+    ],
+    [
         "state" => "Bayelsa Yenagoa",
         "governor" => "Douye Diri",
         "population" => "2.3 million",
@@ -54,15 +53,6 @@ $states = [
         "slogan" => "Glory of All Lands",
         "geo_zone" => "South South",
         "year_created" => 1996
-    ],
-    [
-        "state" => "Benue Makurdi",
-        "governor" => "Hyacinth Alia",
-        "population" => "5.7 million",
-        "mineral_resources" => ["Limestone", "Gypsum", "Barytes"],
-        "slogan" => "Food Basket of the Nation",
-        "geo_zone" => "North Central",
-        "year_created" => 1976
     ],
     [
         "state" => "Borno Maiduguri",
@@ -81,6 +71,15 @@ $states = [
         "slogan" => "The People's Paradise",
         "geo_zone" => "South South",
         "year_created" => 1967
+    ],
+    [
+        "state" => "Benue Makurdi",
+        "governor" => "Hyacinth Alia",
+        "population" => "5.7 million",
+        "mineral_resources" => ["Limestone", "Gypsum", "Barytes"],
+        "slogan" => "Food Basket of the Nation",
+        "geo_zone" => "North Central",
+        "year_created" => 1976
     ],
     [
         "state" => "Delta Asaba",
@@ -110,15 +109,6 @@ $states = [
         "year_created" => 1991
     ],
     [
-        "state" => "Ekiti Ado-Ekiti",
-        "governor" => "Biodun Oyebanji",
-        "population" => "2.7 million",
-        "mineral_resources" => ["Granite", "Kaolin", "Feldspar"],
-        "slogan" => "Fountain of Knowledge",
-        "geo_zone" => "South West",
-        "year_created" => 1996
-    ],
-    [
         "state" => "Enugu Enugu",
         "governor" => "Peter Mbah",
         "population" => "4.4 million",
@@ -126,6 +116,15 @@ $states = [
         "slogan" => "Coal City State",
         "geo_zone" => "South East",
         "year_created" => 1991
+    ],
+    [
+        "state" => "Ekiti Ado-Ekiti",
+        "governor" => "Biodun Oyebanji",
+        "population" => "2.7 million",
+        "mineral_resources" => ["Granite", "Kaolin", "Feldspar"],
+        "slogan" => "Fountain of Knowledge",
+        "geo_zone" => "South West",
+        "year_created" => 1996
     ],
     [
         "state" => "Gombe Gombe",
@@ -137,13 +136,13 @@ $states = [
         "year_created" => 1996
     ],
     [
-        "state" => "Imo Owerri",
-        "governor" => "Hope Uzodinma",
-        "population" => "5.4 million",
-        "mineral_resources" => ["Lead", "Zinc", "Natural Gas"],
-        "slogan" => "Eastern Heartland",
-        "geo_zone" => "South East",
-        "year_created" => 1976
+        "state" => "Kaduna Kaduna",
+        "governor" => "Uba Sani",
+        "population" => "8.2 million",
+        "mineral_resources" => ["Gold", "Tin", "Gemstone"],
+        "slogan" => "Centre of Learning",
+        "geo_zone" => "North West",
+        "year_created" => 1967
     ],
     [
         "state" => "Jigawa Dutse",
@@ -155,13 +154,13 @@ $states = [
         "year_created" => 1991
     ],
     [
-        "state" => "Kaduna Kaduna",
-        "governor" => "Uba Sani",
-        "population" => "8.2 million",
-        "mineral_resources" => ["Gold", "Tin", "Gemstone"],
-        "slogan" => "Centre of Learning",
-        "geo_zone" => "North West",
-        "year_created" => 1967
+        "state" => "Imo Owerri",
+        "governor" => "Hope Uzodinma",
+        "population" => "5.4 million",
+        "mineral_resources" => ["Lead", "Zinc", "Natural Gas"],
+        "slogan" => "Eastern Heartland",
+        "geo_zone" => "South East",
+        "year_created" => 1976
     ],
     [
         "state" => "Kano Kano",
@@ -308,15 +307,6 @@ $states = [
         "year_created" => 1991
     ],
     [
-        "state" => "Yobe Damaturu",
-        "governor" => "Mai Mala Buni",
-        "population" => "3.4 million",
-        "mineral_resources" => ["Lignite", "Gypsum"],
-        "slogan" => "Pride of the Sahel",
-        "geo_zone" => "North East",
-        "year_created" => 1991
-    ],
-    [
         "state" => "Zamfara Gusau",
         "governor" => "Dauda Lawal",
         "population" => "4.5 million",
@@ -324,6 +314,15 @@ $states = [
         "slogan" => "Farming is Our Pride",
         "geo_zone" => "North West",
         "year_created" => 1996
+    ],
+    [
+        "state" => "Yobe Damaturu",
+        "governor" => "Mai Mala Buni",
+        "population" => "3.4 million",
+        "mineral_resources" => ["Lignite", "Gypsum"],
+        "slogan" => "Pride of the Sahel",
+        "geo_zone" => "North East",
+        "year_created" => 1991
     ],
     [
         "state" => "FCT Abuja",
