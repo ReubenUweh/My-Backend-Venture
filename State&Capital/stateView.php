@@ -43,11 +43,11 @@ if (!$selectedState) {
             </div>
             <div class="col-12 col-md-5 mt-5">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="Search for minerals..">
+                    <input type="email" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="Search for minerals.. ">
                 </div>
                 <ol>
                     <?php
-                   foreach ($selectedState['mineral_resources'] as $mineral) {
+                    foreach ($selectedState['mineral_resources'] as $mineral) {
                         echo "<li>" . $mineral . "</li>";
                     }
                     ?>
@@ -56,6 +56,19 @@ if (!$selectedState) {
         </div>
     </div>
     </div>
+    <script>
+        document.getElementById("input1").addEventListener("input", function() {
+            const searchTerm = this.value.toLowerCase();
+            const minerals = document.querySelectorAll("ol li");
+            minerals.forEach(function(mineral) {
+                if (mineral.textContent.toLowerCase().includes(searchTerm)) {
+                    mineral.style.display = "";
+                } else {
+                    mineral.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
