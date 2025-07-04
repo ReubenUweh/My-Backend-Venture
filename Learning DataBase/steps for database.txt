@@ -1,0 +1,5 @@
+step 1: We Connect;
+step 2: Text or Confirm conection using a condition;
+step 3: Create a Statement on your file to call out the code for connecting;
+Execute the code;
+Checking if is successful;
