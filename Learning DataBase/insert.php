@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="text-info">ADD NEW PRODUCTS</h2>
+        <h2 class="text-info mt-4">ADD NEW PRODUCTS</h2>
         <form action="process.php" method="post">
             <div class="mb-3">
                 <label for="product_name" class="form-label">Product Name</label>
@@ -23,6 +26,11 @@
                 <input type="date" class="form-control" name="productExpiryDate" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+         <h6 class="text-success mb-3"><?php echo $_SESSION['message'] ?? ''; ?></h6>
     </div>
 </body>
 </html>
+<?php
+$_SESSION['message'] = null;
+?>

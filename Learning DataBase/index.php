@@ -9,12 +9,14 @@ $result = $conn->query($statement);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Database</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
+
 <body>
     <?php if ($result->num_rows > 0): ?>
         <div class="container">
@@ -25,17 +27,25 @@ $result = $conn->query($statement);
                         <th>Product Name</th>
                         <th>Product Price</th>
                         <th>Expiry Date</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
-                   <?php while ($row = $result->fetch_assoc()): ?>
+                    <?php while ($row = $result->fetch_assoc()): ?>
                         <tr>
-                            <td><?php echo ($row['id'] ?? 'N/A')?></td>
-                            <td><?php echo ($row['product_name'] ?? 'N/A')?></td>
-                            <td><?php echo ($row['productPrice'] ?? 'N/A')?></td>
-                            <td><?php echo ($row['productExpiryDate'] ?? 'N/A')?></td>
+                            <td><?php echo ($row['id'] ?? 'N/A') ?></td>
+                            <td><?php echo ($row['product_name'] ?? 'N/A') ?></td>
+                            <td><?php echo ($row['productPrice'] ?? 'N/A') ?></td>
+                            <td><?php echo ($row['productExpiryDate'] ?? 'N/A') ?></td>
+                            <td>
+                                <form action="process.php" method="get">
+                                    <button type="delete" name="delete" class="btn btn-danger btn-sm">
+                                        <a href="process.php?delete=<?= $row['id'] ?>" class="text-white">Delete</a>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
-                   <?php endwhile; ?>
+                    <?php endwhile; ?>
                 </tbody>
             </table>
         </div>
@@ -45,4 +55,5 @@ $result = $conn->query($statement);
         </div>
     <?php endif; ?>
 </body>
+
 </html>
